@@ -11,7 +11,7 @@ namespace GenericsMaximaumTest
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to generics");
-            Console.WriteLine("1.MaxInteger\n2.MaxFloat\n3.MaxString\n4.Refactor1\n5.Refactor2");
+            Console.WriteLine("1.MaxInteger\n2.MaxFloat\n3.MaxString\n4.Refactor1\n5.Refactor2\n6.ExtendMaxMethod");
             Console.WriteLine("Choose Your Option");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
@@ -43,6 +43,11 @@ namespace GenericsMaximaumTest
                     refactor.NewTestCase();
                     refactor1.NewTestCase();
                     refactor2.NewTestCase();
+                    break;
+                case 6:
+                    ExtendMaxMethod<int>.ExtendMaxValue(700, 200, 300,500);
+                    ExtendMaxMethod<float>.ExtendMaxValue(10.4f, 1.4f, 56.3f,100.4f);
+                    ExtendMaxMethod<string>.ExtendMaxValue("Peach", "Banana", "Apple","Mango");
                     break;
             }
             Console.ReadLine();
