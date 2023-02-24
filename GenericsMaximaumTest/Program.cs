@@ -11,8 +11,8 @@ namespace GenericsMaximaumTest
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to generics");
-            Console.WriteLine("1.MaxInteger");
-            Console.WriteLine("Choose Your Option\n2.MaxFloat");
+            Console.WriteLine("1.MaxInteger\n2.MaxFloat\n3.MaxString");
+            Console.WriteLine("Choose Your Option");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
             {
@@ -25,6 +25,11 @@ namespace GenericsMaximaumTest
                     FloatMax.MaxFloatNumber(34.5f, 20.45f, 30.63f);
                     FloatMax.MaxFloatNumber(20.22f, 20.23f, 10.4f);
                     FloatMax.MaxFloatNumber(10.34f, 20.34f, 30.54f);
+                    break;
+                case 3:
+                    MaxString.MaxStringtValue("Peach","Apple","Banana");
+                    MaxString.MaxStringtValue("Apple", "Peach", "Banana");
+                    MaxString.MaxStringtValue("Apple","Banana","Peach");
                     break;
             }
             Console.ReadLine();

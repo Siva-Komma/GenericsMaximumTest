@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="FloatMax.cs" />
     <Compile Include="MaxInteger.cs" />
+    <Compile Include="MaxString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
